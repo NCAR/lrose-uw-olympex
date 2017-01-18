@@ -1,0 +1,15 @@
+#! /bin/csh -f
+
+source ~meso/projDir/system/params/site_info_olympex
+  
+xrdb -nocpp -override ~meso/projDir/display/params/XResources4CIDD
+
+if (-e ~/.Xdefaults) then
+  xrdb -nocpp -override ~/.Xdefaults
+endif
+
+~meso/projDir/display/scripts/set_font_path >& /dev/null
+
+cd ~meso/projDir/display/params
+CIDD -font fixed -p CIDD.olympex >& /dev/null &
+

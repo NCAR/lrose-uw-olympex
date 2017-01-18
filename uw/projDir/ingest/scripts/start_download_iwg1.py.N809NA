@@ -1,0 +1,16 @@
+#! /bin/csh 
+
+#
+# Start aircraft ingest for N809NA
+#
+
+running "download_iwg1.py --instance N809NA"
+
+if ($status == 1) then
+        download_iwg1.py --instance N809NA \
+                --debug --interval 5 --input_url \
+            http://asp-interface-2.arc.nasa.gov/API/parameter_data/N809NA/IWG1 \
+        --output_dir ~/projDir/data/olympex/raw/aircraft/N809NA |& \
+	LogFilter -d $ERRORS_LOG_DIR -p download_iwg1.py -i N809NA >& /dev/null &
+endif
+

@@ -1,0 +1,10 @@
+Problems trying to start CIDD as any user other than meso on any server other
+then bob:
+
+stellar:brodzik:198>start_CIDD.olympex
+xrdb: colon missing on line 14, ignoring line
+xrdb: colon missing on line 15, ignoring line
+xrdb: colon missing on line 16, ignoring line
+xrdb: colon missing on line 25, ignoring line
+xrdb: colon missing on line 26, ignoring line
+xrdb: colon missing on line 27, ignoring line

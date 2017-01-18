@@ -1,0 +1,16 @@
+#! /bin/csh
+
+source $PROJ_DIR/system/params/site_info_olympex
+  
+setenv PROJ_DIR ~/projDir
+xrdb -nocpp -override $PROJ_DIR/display/params/XResources4CIDD
+
+if (-e ~/.Xdefaults) then
+  xrdb -nocpp -override ~/.Xdefaults
+endif
+
+set_font_path >& /dev/null
+
+cd $PROJ_DIR/display/params
+CIDD -font fixed -p CIDD.oly.npol -v >& /dev/null &
+

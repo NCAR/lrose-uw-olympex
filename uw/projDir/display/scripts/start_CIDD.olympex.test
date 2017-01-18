@@ -1,0 +1,19 @@
+#! /bin/csh -f
+
+setenv PROJ_DIR ~meso/projDir
+setenv DATA_DIR /home/disk/bob
+setenv DATA_HOST localhost
+    
+source ~meso/projDir/system/params/site_info_olympex
+  
+xrdb -nocpp -override ~meso/projDir/display/params/XResources4CIDD
+
+if (-e ~meso/.Xdefaults) then
+  xrdb -nocpp -override ~meso/.Xdefaults
+endif
+
+~meso/projDir/display/scripts/set_font_path >& /dev/null
+
+#cd ~meso/projDir/display/params
+CIDD -font fixed -p ~meso/projDir/display/params/CIDD.olympex >& /dev/null &
+

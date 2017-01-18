@@ -1,0 +1,55 @@
+######################################################################
+# OLYMPEX CRON TABLE
+#
+#SHELL=/bin/csh
+#PATH=/usr/bin:/bin:~/projDir/system/scripts:~/cvs/bin
+####################################################################
+# SYSTEM
+#
+# Ensure auto_restart is running
+#*/1 * * * * ~/projDir/system/scripts/start_auto_restart_check_cron > /tmp/start_auto_restart.log 2>&1 &
+# Ensure procmap is running
+#*/1 * * * * ~/projDir/system/scripts/start_procmap_check_cron > /tmp/start_procmap.log 2>&1 &
+#
+# Build links to log date subdirs
+#*/1 * * * * ~/projDir/system/scripts/start_build_logdir_links > /tmp/build_logdir_links.log 2>&1 &
+#
+####################################################################
+# Stacy's image generation etc
+#
+#59 * * * * /home/disk/bob/olympex/bin/make.products_hash.pl > /dev/null 2>&1
+#00 * * * * /home/disk/bob/olympex/bin/mirror_for_testing.pl > /dev/null 2>&1
+#00 * * * * /home/disk/bob/olympex/bin/get.satellite.pl > /dev/null 2>&1
+#00 09 * * * /home/disk/bob/olympex/bin/get.wrf_gfs_00.new.pl > /dev/null 2>&1
+#00 12 * * * /home/disk/bob/olympex/bin/get.wrf_gfs_12.new.pl > /dev/null 2>&1
+#29 * * * * /home/disk/bob/olympex/bin/make.products_hash.pl > /dev/null 2>&1
+#30 * * * * /home/disk/bob/olympex/bin/get.skewt.pl > /dev/null 2>&1
+#15,45 * * * * /home/disk/bob/olympex/bin/get.satellite.pl > /dev/null 2>&1
+#15,30 * * * * /home/disk/bob/olympex/bin/get.nexrad.pl > /dev/null 2>&1
+#00 00 * * * /home/disk/bob/olympex/bin/get.wrf_data.pl  > /dev/null 2>&1
+#00 12 * * * /home/disk/bob/olympex/bin/get.wrf_data.pl > /dev/null 2>&1
+#00 08 * * * /home/disk/bob/olympex/bin/get.totals.pl > /dev/null 2>&1
+#20 08 * * * /home/disk/bob/olympex/bin/get.upper_air.pl > /dev/null 2>&1
+#45 21 * * * /home/disk/bob/olympex/bin/get.upper_air.pl > /dev/null 2>&1
+#15,45 * * * * /home/disk/bob/olympex/bin/get.sfc_sat.pl > /dev/null 2>&1
+#00 22 * * * /home/disk/bob/olympex/bin/get.extrema_max.pl > /dev/null 2>&1
+#00 08 * * * /home/disk/bob/olympex/bin/get.extrema_min.pl > /dev/null 2>&1
+#00 12 * * * /home/disk/bob/olympex/bin/get.mrr_hr.pl > /dev/null 2>&1
+#00,02 00 * * * /home/disk/bob/olympex/bin/get.hot_plate.pl > /dev/null 2>&1
+#00,02 12 * * * /home/disk/bob/olympex/bin/get.hot_plate.pl > /dev/null 2>&1
+#30 * * * * /home/disk/bob/olympex/bin/get.rain_map.pl > /dev/null 2>&1
+#15,45 * * * * /home/disk/bob/olympex/zeb-data/goes_ir/raw/ingest_goes.pl> /dev/null 2>&1
+#30 10,22 * * *  /home/disk/bob/olympex/bin/get.wrf_oly.data.luke > /dev/null 2>&1
+#15 * * * *  /home/disk/bob/olympex/bin/move.xband_gpm.data.pl >> /tmp/move.xband_gpm.data.log 2>&1
+#*/5 * * * * /home/disk/bob/olympex/bin/make.zeb.links.pl >> /tmp/make_zeb.links 2>&1
+#30 * * * * /home/disk/bob/olympex/bin/get.d3r_ku.images.pl >> /tmp/get.d3r_ku.images.log 2>&1
+#30 * * * * /home/disk/bob/olympex/bin/get.d3r_ka.images.pl >> /tmp/get.d3r_ka.images.log 2>&1
+#15 * * * * /home/disk/bob/olympex/bin/move.ftp.csuSndg.pl >> /tmp/move.ftp.csuSndg.log 2>&1
+#*/10 * * * * /home/disk/bob/olympex/bin/run.ingest_goes_wv.csh >> /tmp/ingest_goes_wv.pl.log 2>&1
+#*/10 * * * * /home/disk/bob/olympex/bin/run.ingest_goes_vis.csh >> /tmp/ingest_goes_vis.pl.log 2>&1
+#*/10 * * * * /home/disk/bob/olympex/bin/run.ingest_goes_ir.csh >> /tmp/ingest_goes_ir.pl.log 2>&1
+#00 */6 * * * /home/disk/bob/olympex/bin/get.npol_images.pl >> /tmp/get.npol_images.pl.log 2>&1
+#*/30 * * * * /home/disk/bob/olympex/bin/get_xband_images.pl >> /tmp/get_xband_images.log 2>&1
+#45 */6 * * * /home/disk/bob/olympex/bin/get.gpm.pl >> /tmp/get.gpm.log 2>&1
+#30 * * * * /home/disk/bob/olympex/zwd/zwd nrs 0 bob:1 zeb.bob.001.socket >> /tmp/zwd_nrs.log 2>&1
+#30 * * * * /home/disk/bob/olympex/zwd/zwd nr  0 bob:2 zeb.bob.002.socket >> /tmp/zwd_nr.log 2>&1

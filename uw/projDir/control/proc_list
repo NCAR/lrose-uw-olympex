@@ -1,0 +1,110 @@
+######################################################################
+# PECAN - on hail
+#
+######################################################################
+# SYSTEM processes
+#
+#Janitor           logs     start_Janitor.logs        snuff_inst
+Scout             primary  start_Scout               kill_Scout
+DataMapper        primary  start_DataMapper          kill_DataMapper
+#
+######################################################################
+# SERVER processes
+#
+DsServerMgr       primary  start_inst(no-params)     snuff_inst
+#
+######################################################################
+#
+# NPOL moments ingest
+#
+InputWatcher npol_raw       start_inst(ingest)  snuff_inst
+RadxConvert  npol           start_inst(ingest)  snuff_inst
+Rhi2Spdb     npol           start_inst(ingest)  snuff_inst
+#
+######################################################################
+#
+# KING moments ingest
+#
+#RadxConvert  king.DOPVOL1_A   start_inst(ingest)  snuff_inst
+#RadxConvert  king.RHI_A       start_inst(ingest)  snuff_inst
+#Rhi2Spdb     king             start_inst(ingest)  snuff_inst
+#
+######################################################################
+#
+# DOW moments ingest
+#
+InputWatcher dow.sec      start_inst(ingest)  snuff_inst
+InputWatcher dow.rhi      start_inst(ingest)  snuff_inst
+RadxConvert  dow.sec.mdv  start_inst(ingest)  snuff_inst
+RadxConvert  dow.rhi.mdv  start_inst(ingest)  snuff_inst
+Rhi2Spdb     dow          start_inst(ingest)  snuff_inst
+#
+######################################################################
+# Aircraft data ingest
+#
+download_iwg1.py N555DS start_download_iwg1.py.N555DS  snuff_inst
+download_iwg1.py N806NA start_download_iwg1.py.N806NA  snuff_inst
+download_iwg1.py N809NA start_download_iwg1.py.N809NA  snuff_inst
+download_iwg1.py N817NA start_download_iwg1.py.N817NA  snuff_inst
+AcData2Spdb      N555DS start_inst(ingest)             snuff_inst
+AcData2Spdb      N806NA start_inst(ingest)             snuff_inst
+AcData2Spdb      N809NA start_inst(ingest)             snuff_inst
+AcData2Spdb      N817NA start_inst(ingest)             snuff_inst
+######################################################################
+# WRF domain 3
+#
+InputWatcher     wrf       start_inst(ingest)  snuff_inst
+Wrf2Mdv          olympex   start_inst(ingest)  snuff_inst
+Mdv2SoundingSpdb wrf       start_inst(ingest)  snuff_inst
+######################################################################
+# SAT data from ZEBRA files
+#
+NcGeneric2Mdv   zebra_vis      start_inst(ingest)  snuff_inst
+NcGeneric2Mdv   zebra_ir       start_inst(ingest)  snuff_inst
+NcGeneric2Mdv   zebra_wv       start_inst(ingest)  snuff_inst
+######################################################################
+# Observations ingest
+#
+CsuSounding2Spdb   npol      start_inst(ingest)  snuff_inst
+######################################################################
+# Zebra from cfradial
+#
+Radx2Grid       klgx_zebra    start_inst(ingest)  snuff_inst
+Radx2Grid       katx_zebra    start_inst(ingest)  snuff_inst
+#
+######################################################################
+# PID and rain rate
+#
+RadxPartRain       npol.sur        start_inst(partrain)     snuff_inst
+RadxPartRain       npol.rhi        start_inst(partrain)     snuff_inst
+RadxPartRain       klgx            start_inst(partrain)     snuff_inst
+RadxPartRain       katx            start_inst(partrain)     snuff_inst
+######################################################################
+# Convective/stratiform partitioning
+#
+#StratFinder        mrms                start_inst(alg)     snuff_inst
+######################################################################
+# Storm tracking
+#
+#Titan           mrms_conv             start_inst(alg)     snuff_inst
+#Tstorms2Spdb    mrms_conv             start_inst(alg)     snuff_inst
+#OpticalFlow     mrms                  start_inst(alg)     snuff_inst
+######################################################################
+#
+# Radx2Grid for low-level PPI grids and 3D grids
+#
+#Radx2Grid         3D.spol         start_Radx2Grid.3D.spol snuff_inst
+#MdvMerge2      lowppi_mosaic  start_MdvMerge2.lowppi_mosaic  snuff_inst
+######################################################################
+#
+# QPE
+#
+#RateAccum         running          start_inst(qpe)   snuff_inst
+#RateAccum         daily            start_inst(qpe)   snuff_inst
+##RadxQpe          spol             start_inst(qpe)   snuff_inst
+#
+######################################################################
+# Images to catalog
+#
+#LdataMultWatcher   catalog.spol       start_inst(catalog) snuff_inst
+######################################################################

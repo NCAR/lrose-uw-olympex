@@ -1,0 +1,12 @@
+#! /bin/csh
+
+cd /home/disk/bob/olympex/npol/sigmet/save
+
+foreach file ( np* )
+  echo using file $file
+  cp $file ..
+  sleep 5
+end
+
+    
+    

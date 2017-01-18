@@ -1,0 +1,50 @@
+#################################################
+# site-specific parameter file for OLYMPEX radars
+#
+# Stacy Brodzik Feb 2015
+#################################################
+
+# site details
+
+# OLYMPEX - NPOL TEST SITE IN MD
+
+setenv PROJECT_NAME               "olympex"
+setenv SITE_NAME                  "npol"
+setenv RADAR_LAT                  47.275528
+setenv RADAR_LON                  -124.209056
+setenv RADAR_ALT_KM               0.139
+setenv RADAR_ALT_M                139
+
+#############################################
+
+# PRECIP RATE
+
+setenv ZH_AA 0.027366
+setenv ZH_BB 0.69444
+
+setenv ZH_AA_SNOW 0.0365
+setenv ZH_BB_SNOW 0.625
+
+setenv ZZDR_AA 0.0067
+setenv ZZDR_BB 0.927
+setenv ZZDR_CC -3.43
+
+setenv KDP_AA 44.0
+setenv KDP_BB 0.822
+
+setenv KDPZDR_AA 90.8
+setenv KDPZDR_BB 0.93
+setenv KDPZDR_CC -2.86
+
+setenv HYBRID_DBZ_THRESHOLD 40
+setenv HYBRID_KDP_THRESHOLD 0.3
+setenv HYBRID_ZDR_THRESHOLD 0.5
+
+setenv HIDRO_DBZ_THRESHOLD 38
+setenv HIDRO_KDP_THRESHOLD 0.3
+setenv HIDRO_ZDR_THRESHOLD 0.5
+
+setenv BRINGI_DBZ_THRESHOLD 40
+setenv BRINGI_KDP_THRESHOLD 0.15
+setenv BRINGI_ZDR_THRESHOLD 0.1
+

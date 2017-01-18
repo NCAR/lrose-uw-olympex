@@ -1,0 +1,14 @@
+#! /bin/csh
+
+source ~/.cshrc
+source ~/.cshrc.local
+
+date -u
+echo start_build_logdir_links    
+
+build_logdir_links -i $ERRORS_LOG_DIR -d
+build_logdir_links -i $DATA_DISTRIB_LOG_DIR -d
+build_logdir_links -i $RESTART_LOG_DIR -d
+
+
+

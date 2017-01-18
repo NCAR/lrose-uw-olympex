@@ -1,0 +1,13 @@
+#! /bin/csh
+#
+
+source ~/.cshrc
+source ~/.cshrc.local
+
+running "auto_restart"
+if ($status == 1) then
+    date -u
+    echo "Starting auto_restart"
+    auto_restart -p ~/projDir/control/proc_list -m localhost -s 30 -u 70 -i \
+    |& LogFilter -d ~/projDir/logs/errors -p auto_restart >& /dev/null &
+endif

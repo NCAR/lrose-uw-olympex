@@ -1,0 +1,219 @@
+#
+# RIACS system-wide .cshrc file.  This file is source by the generic
+# .cshrc so that we can change system parameters without having to
+# edit every user's .cshrc file.
+#
+if(! $?LANGUAGE && ! $?LANG ) then
+     setenv LANGUAGE C
+     setenv LC_ALL C
+     setenv LANG C
+endif
+unset autologout
+set arch = `uname -m`
+setenv MANPATH /usr/share/man:/usr/local/man:/usr/man:/usr/X11R6/man
+set extra = ( $home/bin )
+setenv NCARG_ROOT /home/disk/sys/local/linux64/ncl_ncar-6.2.1
+setenv NCARG /home/disk/sys/local/linux64/ncl_ncar-6.2.1
+
+# CIDD settings
+
+setenv PROJ_DIR $HOME/projDir
+setenv project olympex    
+setenv DATA_DIR $PROJ_DIR/data
+setenv DATA_HOST localhost
+
+setenv BUILD_DIR /home/flood/local
+setenv RAP_INST_LIB_DIR /usr/local/lib
+
+setenv HOST_OS LINUX
+setenv COMPILE_DIR $HOME/ncar/lrose-20151105.src
+setenv RAP_MAKE_INC_DIR $COMPILE_DIR/make_include
+setenv RAP_MAKE_BIN_DIR $COMPILE_DIR/make_bin
+setenv RAP_INC_DIR $COMPILE_DIR/include
+setenv RAP_LIB_DIR $COMPILE_DIR/lib
+setenv RAP_SHARED_LIB_DIR $COMPILE_DIR/lib
+setenv RAP_SHARED_INC_DIR $COMPILE_DIR/include
+setenv RAP_BIN_DIR $COMPILE_DIR/bin
+setenv RAP_MAN_DIR $COMPILE_DIR/man
+setenv RAP_DOC_DIR $COMPILE_DIR/doc
+
+setenv RAP_DATA_DIR $DATA_DIR
+setenv LOG_DIR $DATA_DIR/logs
+setenv DATA_DISTRIB_LOG_DIR $LOG_DIR/distrib
+setenv ERRORS_LOG_DIR $LOG_DIR/errors
+setenv RESTART_LOG_DIR $LOG_DIR/restart
+
+setenv PROCMAP_HOST localhost
+setenv DATA_MAPPER_ACTIVE true
+setenv LDATA_FMQ_ACTIVE true
+
+setenv DS_COMM_TIMEOUT_MSECS 60000
+setenv DS_PING_TIMEOUT_MSECS 20000
+    
+set path = (	.			\
+		$extra			\
+		/usr/local/bin		\
+		/bin			\
+		/usr/bin		\
+		/usr/X11R6/bin		\
+		/usr/hosts		\
+		$NCARG_ROOT/bin		\
+	)
+
+set path = ($path /usr/sbin /sbin /home/flood/local/bin /home/flood/meso/bin /zebra5/bin /usr/local/rsl/bin)
+
+# Assemble path to include all scripts directories
+# then projDir/bin, then the rest
+
+if ( -d $PROJ_DIR ) then
+  foreach dir ($PROJ_DIR/*)
+    if (-d $dir/scripts) then
+      set path = ($path $dir/scripts)
+    endif
+  end
+endif
+
+setenv CLASSPATH .:$home/classes:/usr/local/classes
+
+if( -e /opt/intel/compilers_and_libraries) then
+       source /opt/intel/compilers_and_libraries/linux/bin/compilervars.csh intel64
+endif
+
+if ($?LD_LIBRARY_PATH) then
+    setenv LD_LIBRARY_PATH "${LD_LIBRARY_PATH}":/usr/local/lib
+else		
+    setenv LD_LIBRARY_PATH /usr/local/lib
+endif
+
+if ($?TARGET_ARCH) unsetenv TARGET_ARCH
+if ($?prompt == 0) exit
+#
+# Make sure TERMCAP entry for xterm is correct
+#
+if ($?TERM) then
+    if($TERM == "xterm") then
+	eval `resize -c`
+    endif
+endif
+set OS = `uname -s`
+
+# SRB added items below on 10/27/2015
+
+#setenv IDL_DIR /usr/local/exelis/idl
+
+# Mesoscale Customizations to .cshrc file
+
+# called as last thing in .cshrc file
+#unset mychoice
+#set mychoice=openwin
+
+#linux color
+#alias  ls 'ls -ahC --color'
+
+alias help man
+alias rm rm -i
+alias cp cp -i
+alias mv mv -i
+alias zsocket "source /home/flood/local/bin/zsocket.internal"
+alias xanim xanim +V0
+
+#default the printer to the LaserJet in 611
+#setenv LPDEST lj611
+
+#set environment variable for tsdis toolkit config and ancillary data files
+#uname | grep SunOS > /dev/null
+#setenv TSDISTK /home/disk/blitz/src/toolkit
+#setenv GMTHOME /usr/lib/gmt
+#setenv GMT_SHAREDIR /home/disk/blitz/data/gmt
+#setenv TSDISorbitViewer_src /home/disk/blitz/src/orbit/TSDISorbitViewer
+#setenv NCARG_ROOT /home/disk/sys/local/linux64/ncarg-ifort11
+#setenv NCARG_ROOT /home/disk/sys/local/linux64/ncarg-6.0.0w
+setenv LD_LIBRARY_PATH /usr/lib/x86_64-linux-gnu:/usr/lib:/lib:/usr/local/lib:/usr/local/rsl/lib
+
+#LJM on rainband
+#setenv NCARG_ROOT /usr/local/ncl
+
+#set environment variable for RIP4 software
+#setenv RIP_ROOT /home/disk/blitz/src/RIP4
+
+# TKIO settings
+#setenv TKIO /home/disk/blitz/src/tkio
+#set CLASSPATH = ($CLASSPATH $TKIO/classes)
+
+#setenv UDUNITS_PATH /usr/local/etc/udunits.dat
+
+# aliases
+    
+if ($?prompt) then
+
+  alias sc source ~/.cshrc
+
+  set prompt = "%m:%~%# "             # tcsh
+  set showdots                        # tcsh
+  set watch = (1 root any)            # tcsh
+  set history=1000
+  set nobeep
+  set time = 5
+
+  alias h history
+  alias ssh 'ssh -XY'
+
+  alias rm 'rm -i'
+  alias mv 'mv -i'
+  alias cp 'cp -i' 
+
+  alias df 'df -h'
+  set filec
+  set fignore = (.o .ln)
+
+  alias catw 'cat `which \!*`'
+  alias lessw 'less `which \!*`'
+  alias emacsw 'emacs -nw `which \!*`'
+  alias viw 'vi `which \!*`'
+
+  alias xx 'xrdb ~/.Xdefaults'
+  alias cvs 'cvs -d :pserver:${CVSUSER}@localhost:/cvs \!*'
+  alias cvsforward 'ssh -a -x -C -Y -R 2401:localhost:2401 -R 8888:localhost:8888'
+  
+  alias gate 'ssh -a -XY -C -L 2401:cvs.rap.ucar.edu:2401 -L 8888:svn.eol.ucar.edu:80 dixon@gate.ucar.edu'
+
+  alias print_procmap 'print_procmap -hb -up -status'
+  alias PrintDataMap 'PrintDataMap -all -relt -lreg'
+  alias ppm 'print_procmap -hb -up -status'
+  alias pdm 'PrintDataMap -all -relt -lreg'
+  alias pdmp 'PrintDataMap -all -relt -lreg -c 5 | egrep "pecan|DataType" '
+  alias dmd 'DataMapper -delete '
+  alias pcheck 'procmap_list_check -proc_list $PROJ_DIR/control/proc_list'
+  alias dcheck 'DataMapper_list_check -data_list $PROJ_DIR/control/data_list'
+  alias pcheckOK 'pcheck -ok'
+  alias dcheckOK 'dcheck -ok'
+
+endif
+
+# ECNWF settings
+setenv PYTHONPATH /usr/local/ecmwfapi
+
+if ($?prompt == 0) exit
+
+set history = 200
+set prompt =  "`hostname | sed -e 's/\..*//'`:`whoami`:\!>"
+
+# local shell scripts for commands
+alias xdump /home/flood/meso/bin/xdump
+
+# load user custom initializations
+# if there is a local .alias file, else do nothing
+if ( -f $HOME/.alias ) then
+	source $HOME/.alias 
+endif
+
+source $PROJ_DIR/system/params/site_info_olympex
+
+limit stacksize unlimited
+
+#set OrbitViewer environ var
+
+alias thor /home/flood/olympex/orbit/orbitUNIX.sh
+
+umask 2
+    

@@ -1,0 +1,107 @@
+# .cshrc.local - NCAR
+
+setenv PROJ_DIR $HOME/projDir
+source $PROJ_DIR/system/params/site_info_olympex
+
+setenv HOST_OS LINUX
+setenv BUILD_DIR $HOME/cvs
+setenv RAP_MAKE_INC_DIR $BUILD_DIR/make_include
+setenv RAP_MAKE_BIN_DIR $BUILD_DIR/make_bin
+setenv RAP_INC_DIR $BUILD_DIR/include
+setenv RAP_LIB_DIR $BUILD_DIR/lib
+setenv RAP_SHARED_LIB_DIR $BUILD_DIR/lib
+setenv RAP_BIN_DIR $BUILD_DIR/bin
+setenv RAP_MAN_DIR $BUILD_DIR/man
+setenv RAP_DOC_DIR $BUILD_DIR/doc
+
+setenv RAP_SHARED_INC_DIR $RAP_INC_DIR
+setenv RAP_SHARED_LIB_DIR $RAP_LIB_DIR
+setenv RAP_SHARED_BIN_DIR $RAP_BIN_DIR
+
+# CVS
+
+setenv CVSUSER dixon
+setenv CVSROOT :pserver:${CVSUSER}@localhost:/cvs
+
+# --- RUNTIME ---
+
+setenv DATA_HOST localhost
+setenv project olympex
+setenv TITAN_HOME $PROJ_DIR
+setenv DATA_DIR /home/disk/bob
+setenv RAP_DATA_DIR $DATA_DIR
+setenv TMP_DIR $DATA_DIR/tmp
+setenv LOG_DIR $PROJ_DIR/logs
+setenv DATA_DISTRIB_LOG_DIR $LOG_DIR/distrib
+setenv ERRORS_LOG_DIR $LOG_DIR/errors
+setenv RESTART_LOG_DIR $LOG_DIR/restart
+
+setenv PROCMAP_HOST localhost
+setenv DATA_MAPPER_ACTIVE true
+setenv LDATA_FMQ_ACTIVE true
+
+setenv DS_COMM_TIMEOUT_MSECS 60000
+setenv DS_PING_TIMEOUT_MSECS 20000
+
+setenv LD_LIBRARY_PATH $HOME/cvs/lib:$LD_LIBRARY_PATH
+
+# Assemble path to include all scripts directories
+# then projDir/bin, then the rest
+
+set path = ($HOME/cvs/bin $path)
+
+if ( -d $PROJ_DIR ) then
+  foreach dir ($PROJ_DIR/*)
+    if (-d $dir/scripts) then
+      set path = ($dir/scripts $path)
+    endif
+  end
+endif
+
+if ($?prompt) then
+
+  alias sc "source ~/.cshrc; source ~/.cshrc.local"
+
+  alias setprompt 'set prompt="(`hostname`) `basename $cwd` ! % "'
+  alias cd 'cd \!*;setprompt; echo $cwd'
+  alias push 'pushd \!*; cd .'
+  alias pop 'popd; cd .'
+
+  set prompt = "%m:%~%# "             # tcsh
+  set showdots                        # tcsh
+  set watch = (1 root any)            # tcsh
+  set history=1000
+  set nobeep
+  set time = 5
+
+  alias h history
+  alias ssh 'ssh -XY'
+
+  alias df 'df -h'
+  set filec
+  set fignore = (.o .ln)
+
+  alias catw 'cat `which \!*`'
+  alias lessw 'less `which \!*`'
+  alias emacsw 'emacs -nw `which \!*`'
+  alias viw 'vi `which \!*`'
+
+  alias cvs 'cvs -d :pserver:${CVSUSER}@localhost:/cvs \!*'
+  alias cvsforward 'ssh -a -x -C -Y -R 2401:localhost:2401 -R 8888:localhost:8888'
+  
+  alias gate 'ssh -a -XY -C -L 2401:cvs.rap.ucar.edu:2401 -L 8888:svn.eol.ucar.edu:80 dixon@gate.ucar.edu'
+
+  alias print_procmap 'print_procmap -hb -up -status'
+  alias PrintDataMap 'PrintDataMap -all -relt -lreg'
+  alias ppm 'print_procmap -hb -up -status'
+  alias pdm 'PrintDataMap -all -relt -lreg'
+  alias pdmp 'PrintDataMap -all -relt -lreg -c 5 | egrep "pecan|DataType" '
+  alias dmd 'DataMapper -delete '
+  alias pcheck 'procmap_list_check -proc_list $PROJ_DIR/control/proc_list'
+  alias dcheck 'DataMapper_list_check -data_list $PROJ_DIR/control/data_list'
+  alias pcheckOK 'pcheck -ok'
+  alias dcheckOK 'dcheck -ok'
+  alias ph 'get_host_type'
+
+endif
+

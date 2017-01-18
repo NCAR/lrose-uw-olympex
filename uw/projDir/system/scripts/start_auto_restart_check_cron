@@ -1,0 +1,28 @@
+#! /bin/csh
+#
+
+source ~/.cshrc
+source ~/.cshrc.local
+
+#
+# start auto_restart only if cron is active
+#
+
+set checkfile=/tmp/croncheck_auto_restart
+crontab -l >& $checkfile
+grep "no crontab" $checkfile >& /dev/null
+
+# if grep returns 1, cron is there so go ahead
+
+if ($status == 1) then
+    date -u
+    echo "Calling start_auto_restart"
+    start_auto_restart
+endif
+
+# rm tmp file
+
+/bin/rm -f $checkfile
+
+
+

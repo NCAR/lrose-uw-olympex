@@ -1,33 +1,20 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# .gitignore at top level
 
-# Precompiled Headers
-*.gch
-*.pch
+# cvs
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+CVS
+Entries.Log
+Entries.static
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# emacs
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+~*
+*~
 
-# Debug files
-*.dSYM/
-*.su
+# links
+
+projDir/data
+
+projDir/control/crontab
+projDir/control/proc_list
+projDir/system/params/project_info

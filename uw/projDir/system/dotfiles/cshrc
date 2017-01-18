@@ -1,0 +1,142 @@
+#
+# This file is read each time a C-shell starts up, such as when
+# you log in.  It is read before .login
+#
+# You should not put any commands in here that generate output.
+#
+#
+# First, run the system .cshrc file.  This sets the search path,
+# and so on to what they should be.  If yu leave this line here,
+# then if something changes on the system, it will automatically
+# be included in your environment.  If you take this line out,
+# then you'll have to fend for yourself.  (In simple words, don't
+# take this line out.)
+#
+
+set path = (/bin /sbin /usr/bin)
+if (-r /home/disk/sys/local/linux/etc/system.cshrc) \
+	source /home/disk/sys/local/linux/etc/system.cshrc
+
+if (-r /opt/local/etc/system.cshrc) then
+	source /opt/local/etc/system.cshrc
+endif
+
+# source the gempak file so that garp will run (it's on button3 of pulldowns
+
+if (-r /usr/local/gempak/Gemenviron) \
+	source /usr/local/gempak/Gemenviron
+
+# source the IDL setup file
+
+#source /home/disk/meso-home/meso/rsi/idl/bin/idl_setup
+
+#SOLARIS SETTINGS
+if ( -e /etc/rc0 ) then
+	set mail	=	(120 /var/mail/$USER)
+#	set path = (. /opt/SUNWserx/bin /opt/craysoft/craydoc/v2.2fcs/bin /opt/craysoft/f90e/bin /opt/FSUNf90/bin /opt/SUNWconn/bin /opt/SUNWsunpc/bin /usr/opt/SUNWmd/sbin $GUIDEHOME/bin /opt/SUNWhsm/bin /opt/SUNWhsm/sbin /opt/local/sbin /usr/sbin /usr/local/etc /opt/SUNWspro/bin3 /opt/local/bin /usr/ccs/bin /usr/bin $path)
+	set path = ($OPENWINHOME/bin $path)
+	setenv MANPATH $MANPATH\:/home/disk/meso-home/meso/man
+	setenv HELPPATH /opt/SUNWconn/snm/help
+	setenv gksdir /opt/gks4101
+#	unsetenv LD_LIBRARY_PATH
+#	setenv LD_LIBRARY_PATH /usr/openwin/lib:/opt/FSUNf90/lib
+#LINUX SETTINGS
+else
+#	set path = (/usr/FSUNf90/bin $GUIDEHOME/bin /usr/newsprint/bin /usr/snm/bin $OPENWINHOME/bin /home/vortex/grafpak /usr/etc /etc $path)
+#	setenv PRINTER sparc716
+	setenv MANPATH $MANPATH\:/home/disk/meso-home/meso/man\:/usr/local/gmt/man
+#	setenv ABHOME /usr/AnswerBook/SysSoft1.3
+#	setenv GUIDEHOME /usr/guide
+#	set path = (/usr/snm/bin $GUIDEHOME/bin /home/vortex/grafpak /usr/etc /etc $path)
+#	setenv BOOKINFO $ABHOME/bookinfo
+#	setenv LD_LIBRARY_PATH /usr/local/lib:/usr/openwin/lib:/usr/FSUNf90/lib
+#	setenv LD_LIBRARY_PATH /usr/openwin/lib:/usr/local/lib
+	set mail	=	(120 /usr/spool/mail/$USER)
+	if (-r /usr/lib/jvm/java-6-sun/jre) \
+	    setenv MATLAB_JAVA /usr/lib/jvm/java-6-sun/jre
+endif
+#
+# Set options
+#	fignore = Suffixes to ignore on file completion
+#	filec = enable filename completion
+#	history = how many past commands to remember
+#	ignoreeof = don't let CTRL-D log you off
+#	mail = how often to check for mail and where it is
+#	notify = report changes in status of background jobs
+#	noclobber = don't overwrite existing files with ">"
+
+umask 2
+	
+set fignore	=	(.o ~)
+set filec
+set history	=	100
+set ignoreeof
+set mail	=	(120 /usr/spool/mail/$USER)
+set notify
+set noclobber
+#
+# This makes sure that the copy, move, and remove programs ask
+# you for confirmation.  If you don't like this (i.e., if you
+# know what you're doing), delete these lines.
+#
+alias cp	cp -i
+alias mv	mv -i
+alias rm 	rm -i
+#
+# Tell the "ls" program to print directory names with a trailing
+# "/" and executable file names with a trailing "*".
+#
+#alias ls 	ls -F
+
+#
+# Make sure TERMCAP entry for xterm is correct
+#
+#if ($?TERM) then
+#   if ($TERM == "xterm") then
+    if (TERM == "xterm") then
+	resize > /tmp/out.$$
+	source /tmp/out.$$
+	rm /tmp/out.$$
+    endif
+#endif
+
+# Support ncview
+setenv XAPPLRESDIR $HOME/resources/
+
+# WATADS9.0 Settings
+setenv WATADS_HOME /home/disk/meso-home/radar/nexrad/watads9.0/bin
+set path=($path $WATADS_HOME)
+
+# Support ncview (added 12/21/00)
+setenv XAPPLRESDIR $HOME/resources/
+#
+# set OrbitViewer environment variable
+#setenv TSDISorbitViewer_src /home/disk/meso-raid/src/orbit/TSDISorbitViewer
+#setenv TSDISorbitViewer_src /home/disk/meso-home/meso/src/orbit_1.3.0/TSDISorbitViewer
+#setenv TSDISorbitViewer_src /home/disk/blitz/src/orbit_32/TSDISorbitViewer
+alias orbit /home/disk/blitz/src/orbit/orbitUNIX.sh
+
+# set stacksize to unlimited
+limit stacksize unlimited
+
+#setenv NCARG_ROOT /home/disk/sys/local/linux64/ncarg-ifort11
+setenv NCARG_ROOT /home/disk/sys/local/linux64/ncarg-6.0.0w
+setenv NCARG_COLORMAPS $NCARG_ROOT/lib/ncarg/colormaps
+
+# load mesoscale group customizations
+source /home/disk/meso-home/meso/.meso-inits
+
+# load any personal things here
+if (-e ~/.cshrc.local) source ~/.cshrc.local
+
+#
+# Define the prompt to include the history number and host name.
+# Only do this if this shell is an interactive one.
+#
+#if ($?prompt == 0) exit
+#if ($?tcsh) then
+#	set prompt = "%h %m%% "
+#else
+#	set prompt = "\! `hostname | sed -e 's/\..*//'`% "
+#endif
+

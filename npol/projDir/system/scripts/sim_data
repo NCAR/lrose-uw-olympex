@@ -1,0 +1,12 @@
+#! /bin/csh
+
+cd /home/flood2/sigmet/save
+
+foreach file ( np* )
+  echo using file $file
+  cp $file ../npol
+  sleep 3
+end
+
+    
+    
