@@ -37,7 +37,7 @@ debug = DEBUG_NORM;
 // Type: string
 //
 
-instance = "xband";
+instance = "xband_all";
 
 ///////////// mode ////////////////////////////////////
 //
@@ -109,7 +109,7 @@ mdv_search_margin_secs = 900;
 // Type: string
 //
 
-input_url = "/home/disk/mjo/data.server/olympex/cfradial/moments/xband_all/rhi";
+input_url = "/home/disk/bob/data.server/olympex/cfradial/moments/xband_all/rhi";
 
 ///////////// output_url //////////////////////////////
 //
@@ -119,5 +119,5 @@ input_url = "/home/disk/mjo/data.server/olympex/cfradial/moments/xband_all/rhi";
 // Type: string
 //
 
-output_url = "/home/disk/mjo/data.server/olympex/spdb/rhi/xband_all";
+output_url = "/home/disk/bob/data.server/olympex/spdb/rhi/xband_all";
 
