@@ -128,7 +128,7 @@ n_compute_threads = 4;
 //
 
 //input_dir = "$(DATA_DIR)/$(project)/cfradial/moments/npol/rhi";
-input_dir = "/home/disk/bob/olympex/cfradial/moments/npol/sur";
+input_dir = "/home/disk/bob/olympex/cfradial/moments/npol_qc2/sur";
 
 ///////////// mode ////////////////////////////////////
 //

@@ -326,7 +326,7 @@ compression_level = 4;
 // Type: string
 //
 
-output_dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/sur";
+output_dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/sur_new";
 
 ///////////// output_filename_mode ////////////////////
 //

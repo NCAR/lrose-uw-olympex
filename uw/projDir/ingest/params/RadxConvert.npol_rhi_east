@@ -42,7 +42,7 @@ debug = DEBUG_OFF;
 // Type: string
 //
 
-instance = "npol_ppi";
+instance = "npol_rhi";
 
 //======================================================================
 //
@@ -60,7 +60,7 @@ instance = "npol_ppi";
 // Type: string
 //
 
-input_dir = "/home/disk/bob/olympex/raw/npol_qc2/ppi";
+input_dir = "/home/disk/bob/olympex/raw/npol_qc2/rhi";
 
 ///////////// mode ////////////////////////////////////
 //
@@ -973,7 +973,7 @@ version_override = "";
 // Type: string
 //
 
-title_override = "QCed NPOL radar data";
+title_override = "QCv2 NPOL radar data";
 
 ///////////// institution_override ////////////////////
 //
@@ -1012,7 +1012,7 @@ references_override = "https://ams.confex.com/ams/36Radar/webprogram/Manuscript/
 // Type: string
 //
 
-source_override = "NPOL Radar QCed UF files";
+source_override = "NPOL Radar QCv2 UF files";
 
 ///////////// history_override ////////////////////////
 //
@@ -1231,8 +1231,8 @@ output_fields = {
   {
     input_field_name = "D0",
     output_field_name = "D0",
-    long_name = "mean_volume_diameter",
-    standard_name = "mean_volume_diameter",
+    long_name = "median_volume_diameter",
+    standard_name = "median_volume_diameter",
     output_units = "mm",
     encoding = OUTPUT_ENCODING_INT16,
     output_scaling = SCALING_DYNAMIC,
@@ -1243,8 +1243,8 @@ output_fields = {
   {
     input_field_name = "NW",
     output_field_name = "NW",
-    long_name = "normalized_intercept_parameter",
-    standard_name = "normalized_intercept_parameter",
+    long_name = "normalized_intercept_parameter_dm",
+    standard_name = "normalized_intercept_parameter_dm",
     output_units = "mm-1 m-3",
     encoding = OUTPUT_ENCODING_INT16,
     output_scaling = SCALING_DYNAMIC,
@@ -1267,8 +1267,8 @@ output_fields = {
   {
     input_field_name = "N2",
     output_field_name = "N2",
-    long_name = "normalized_intercept_parameter_dm",
-    standard_name = "normalized_intercept_parameter_dm",
+    long_name = "normalized_intercept_parameter_d0",
+    standard_name = "normalized_intercept_parameter_d0",
     output_units = "mm-1 m-3",
     encoding = OUTPUT_ENCODING_INT16,
     output_scaling = SCALING_DYNAMIC,
@@ -1729,7 +1729,7 @@ compression_level = 4;
 // Type: string
 //
 
-output_dir = "/home/disk/bob/olympex/cfradial/moments/npol_qc2/sur";
+output_dir = "/home/disk/bob/olympex/cfradial/moments/npol_qc2/rhi";
 
 ///////////// output_filename_mode ////////////////////
 //
@@ -1761,7 +1761,7 @@ output_filename_mode = START_AND_END_TIMES;
 // Type: string
 //
 
-output_filename_prefix = "";
+output_filename_prefix = "cfrad_east.";
 
 ///////////// include_instrument_name_in_file_name ////
 //
