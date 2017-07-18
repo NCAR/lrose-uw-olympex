@@ -1602,6 +1602,11 @@ selected_fields = {
     input_name = "SNR",
     process_this_field = FALSE
   }
+  ,
+  {
+    input_name = "HID",
+    process_this_field = TRUE
+  }
 };
 
 //======================================================================
@@ -1769,7 +1774,7 @@ folded_fields = {
 // Type: boolean
 //
 
-set_discrete_fields = FALSE;
+set_discrete_fields = TRUE;
 
 ///////////// discrete_fields /////////////////////////
 //
@@ -1794,7 +1799,7 @@ set_discrete_fields = FALSE;
 
 discrete_fields = {
   {
-    input_name = "PID",
+    input_name = "HID",
     is_discrete = TRUE
   }
 };

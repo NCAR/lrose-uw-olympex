@@ -287,7 +287,7 @@ WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&E
 WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-WRF_TEMP_C    WRF_TEMP_C    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&Temp   temp.colors      C     -5 80 5 dcont 1 0
+WRF_TEMP_C    WRF_TEMP_C    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&Temp   temp_wrf.colors      C     -5 80 5 dcont 1 0
 WRF_THETA_E   WRF_THETA_E   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&THETA  tempK.colors        %     -5 80 5 dcont 1 0
 WRF_RH        WRF_RH        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&RH     rh.colors        %     -5 80 5 dcont 1 0
 WRF_Q         WRF_Q         mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&Q      mix_frac.colors  kg/kg -5 80 5 dcont 1 0
