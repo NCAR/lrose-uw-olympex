@@ -176,342 +176,342 @@
 <!-- MDV Layers -->
 
 <Layer vis="on" type="MDV" name="NEXR KLGX DBZ" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx"
-       field="DBZ" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
+       field="DBZ" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
        menuGroup="menu1" menuName="KLGX-DBZ" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX VEL30" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_30.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_30.colors"
        menuGroup="menu1" menuName="KLGX-VEL30" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX VEL45" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_45.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_45.colors"
        menuGroup="menu1" menuName="KLGX-VEL45" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX VELNEX" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_nexrad.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_nexrad.colors"
        menuGroup="menu1" menuName="KLGX-VELNEX" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX WIDTH" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx"
-       field="WIDTH" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width.colors"
+       field="WIDTH" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width.colors"
        menuGroup="menu1" menuName="KLGX-WIDTH" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX ZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx"
-       field="ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
+       field="ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
        menuGroup="menu1" menuName="KLGX-ZDR" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX PHIDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx"
-       field="PHIDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/phidp.colors"
+       field="PHIDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/phidp.colors"
        menuGroup="menu1" menuName="KLGX-PHIDP" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX RHOHV" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx"
-       field="RHOHV" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
+       field="RHOHV" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
        menuGroup="menu1" menuName="KLGX-RHOHV" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX PID" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx"
-       field="PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/pid.colors"
+       field="PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/pid.colors"
        menuGroup="menu1" menuName="KLGX-PID" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX PID TEMP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx"
-       field="TEMP_FOR_PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/temp.colors"
+       field="TEMP_FOR_PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/temp.colors"
        menuGroup="menu1" menuName="KLGX-PID-TEMP" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX KDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx"
-       field="KDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/kdp_sband.colors"
+       field="KDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/kdp_sband.colors"
        menuGroup="menu1" menuName="KLGX-KDP" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX RATE ZH" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx"
-       field="RATE_ZH" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_ZH" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KLGX-RATE-ZH" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX RATE ZZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx"
-       field="RATE_Z_ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_Z_ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KLGX-RATE-ZZDR" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX RATE KDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx"
-       field="RATE_KDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_KDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KLGX-RATE-KDP" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX RATE PID" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx"
-       field="RATE_PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KLGX-RATE-PID" />
 
 <Layer vis="off" type="MDV" name="NEXR KLGX RATE HYBR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx"
-       field="RATE_HYBRID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_HYBRID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KLGX-RATE-HYB" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX DBZ" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx"
-       field="DBZ" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
+       field="DBZ" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
        menuGroup="menu1" menuName="KATX-DBZ" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX VEL30" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_30.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_30.colors"
        menuGroup="menu1" menuName="KATX-VEL30" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX VEL45" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_45.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_45.colors"
        menuGroup="menu1" menuName="KATX-VEL45" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX VELNEX" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_nexrad.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_nexrad.colors"
        menuGroup="menu1" menuName="KATX-VELNEX" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX WIDTH" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx"
-       field="WIDTH" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width.colors"
+       field="WIDTH" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width.colors"
        menuGroup="menu1" menuName="KATX-WIDTH" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX ZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx"
-       field="ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
+       field="ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
        menuGroup="menu1" menuName="KATX-ZDR" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX PHIDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx"
-       field="PHIDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/phidp.colors"
+       field="PHIDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/phidp.colors"
        menuGroup="menu1" menuName="KATX-PHIDP" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX RHOHV" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx"
-       field="RHOHV" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
+       field="RHOHV" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
        menuGroup="menu1" menuName="KATX-RHOHV" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX PID" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx"
-       field="PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/pid.colors"
+       field="PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/pid.colors"
        menuGroup="menu1" menuName="KATX-PID" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX PID TEMP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx"
-       field="TEMP_FOR_PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/temp.colors"
+       field="TEMP_FOR_PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/temp.colors"
        menuGroup="menu1" menuName="KATX-PID-TEMP" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX KDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx"
-       field="KDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/kdp_sband.colors"
+       field="KDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/kdp_sband.colors"
        menuGroup="menu1" menuName="KATX-KDP" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX RATE ZH" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx"
-       field="RATE_ZH" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_ZH" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KATX-RATE-ZH" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX RATE ZZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx"
-       field="RATE_Z_ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_Z_ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KATX-RATE-ZZDR" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX RATE KDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx"
-       field="RATE_KDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_KDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KATX-RATE-KDP" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX RATE PID" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx"
-       field="RATE_PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KATX-RATE-PID" />
 
 <Layer vis="off" type="MDV" name="NEXR KATX RATE HYBR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx"
-       field="RATE_HYBRID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_HYBRID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu1" menuName="KATX-RATE-HYB" />
 
 <Layer vis="off" type="MDV" name="NPOL DBZ" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur"
-       field="DBZ" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
+       field="DBZ" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
        menuGroup="menu3" menuName="NPOL-DBZ" />
 
 <Layer vis="off" type="MDV" name="NPOL VEL30" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_30.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_30.colors"
        menuGroup="menu3" menuName="NPOL-VEL30" />
 
 <Layer vis="off" type="MDV" name="NPOL VEL45" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_45.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_45.colors"
        menuGroup="menu3" menuName="NPOL-VEL45" />
 
 <Layer vis="off" type="MDV" name="NPOL VELNEX" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_nexrad.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_nexrad.colors"
        menuGroup="menu3" menuName="NPOL-VELNEX" />
 
 <Layer vis="off" type="MDV" name="NPOL ZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur"
-       field="ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
+       field="ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
        menuGroup="menu3" menuName="NPOL-ZDR" />
 
 <Layer vis="off" type="MDV" name="NPOL RHOHV" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur"
-       field="RHOHV" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
+       field="RHOHV" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
        menuGroup="menu3" menuName="NPOL-RHOHV" />
 
 <Layer vis="off" type="MDV" name="NPOL PID" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/pid.colors"
+       field="PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/pid.colors"
        menuGroup="menu3" menuName="NPOL-PID" />
 
 <Layer vis="off" type="MDV" name="NPOL PID TEMP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="TEMP_FOR_PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/temp.colors"
+       field="TEMP_FOR_PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/temp.colors"
        menuGroup="menu3" menuName="NPOL-PID-TEMP" />
 
 <Layer vis="off" type="MDV" name="NPOL DBZ FOR RATE" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="DBZ_FOR_RATE" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
+       field="DBZ_FOR_RATE" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
        menuGroup="menu3" menuName="NPOL-DBZ-FOR-RATE" />
 
 <Layer vis="off" type="MDV" name="NPOL ZDR FOR RATE" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="ZDR_FOR_RATE" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
+       field="ZDR_FOR_RATE" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
        menuGroup="menu3" menuName="NPOL-ZDR-FOR-RATE" />
 
 <Layer vis="off" type="MDV" name="NPOL KDP FOR RATE" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="KDP_FOR_RATE" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/kdp_sband.colors"
+       field="KDP_FOR_RATE" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/kdp_sband.colors"
        menuGroup="menu3" menuName="NPOL-KDP-FOR-RATE" />
 
 <Layer vis="off" type="MDV" name="NPOL KDP2" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="KDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/kdp_sband.colors"
+       field="KDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/kdp_sband.colors"
        menuGroup="menu3" menuName="NPOL-KDP2" />
 
 <Layer vis="off" type="MDV" name="RATE ZZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_Z_ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors" menuName="RATE-ZZDR" />
+       field="RATE_Z_ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors" menuName="RATE-ZZDR" />
 
 <Layer vis="off" type="MDV" name="NPOL RATE ZH" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_ZH" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_ZH" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu3" menuName="NPOL-RATE-ZH" />
 
 <Layer vis="off" type="MDV" name="NPOL RATE ZH SNOW" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_ZH_SNOW" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_ZH_SNOW" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu3" menuName="NPOL-RATE-ZH-SNOW" />
 
 <Layer vis="off" type="MDV" name="NPOL RATE KDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_KDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_KDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu3" menuName="NPOL-RATE-KDP" />
 
 <Layer vis="off" type="MDV" name="NPOL RATE KZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_KDP_ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_KDP_ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu3" menuName="NPOL-RATE-KZDR" />
 
 <Layer vis="off" type="MDV" name="NPOL RATE HYBRID" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_HYBRID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_HYBRID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu3" menuName="NPOL-RATE-HYBRID" />
 
 <Layer vis="off" type="MDV" name="NPOL RATE PID" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_PID" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_PID" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu3" menuName="NPOL-RATE-PID" />
 
 <Layer vis="off" type="MDV" name="NPOL RATE HIDRO" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_HIDRO" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_HIDRO" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu3" menuName="NPOL-RATE-HIDRO" />
 
 <Layer vis="off" type="MDV" name="NPOL RATE BRINGI" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur"
-       field="RATE_BRINGI" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
+       field="RATE_BRINGI" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/precip_rate.colors"
        menuGroup="menu3" menuName="NPOL-RATE-BRINGI" />
 
 <Layer vis="off" type="MDV" name="DOW DBZHC F" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec"
-       field="DBZHC_F" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
+       field="DBZHC_F" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
        menuGroup="menu2" menuName="DOW-DBZHC-F" />
 
 <Layer vis="off" type="MDV" name="DOW VEL30 F" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec"
-       field="VEL_F" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_30.colors"
+       field="VEL_F" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_30.colors"
        menuGroup="menu2" menuName="DOW-VEL30-F" />
 
 <Layer vis="off" type="MDV" name="DOW VEL45 F" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec"
-       field="VEL_F" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_45.colors"
+       field="VEL_F" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_45.colors"
        menuGroup="menu2" menuName="DOW-VEL45-F" />
 
 <Layer vis="off" type="MDV" name="DOW VELNEX F" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec"
-       field="VEL_F" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_nexrad.colors"
+       field="VEL_F" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_nexrad.colors"
        menuGroup="menu2" menuName="DOW-VELNEX-F" />
 
 <Layer vis="off" type="MDV" name="DOW WIDTH F" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec"
-       field="WIDTH_F" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width.colors"
+       field="WIDTH_F" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width.colors"
        menuGroup="menu2" menuName="DOW-WIDTH-F" />
 
 <Layer vis="off" type="MDV" name="DOW ZDR F" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec"
-       field="ZDR_F" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
+       field="ZDR_F" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
        menuGroup="menu2" menuName="DOW-ZDR-F" />
 
 <Layer vis="off" type="MDV" name="DOW RHOHV F" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec"
-       field="RHOHV_F" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
+       field="RHOHV_F" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
        menuGroup="menu2" menuName="DOW-RHOHV-F" />
 
 <Layer vis="off" type="MDV" name="SAT VIS" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sat/vis"
-       field="vis" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/sat_counts.colors"
+       field="vis" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/sat_counts.colors"
        menuGroup="menu5" menuName="SAT-VIS" />
 
 <Layer vis="off" type="MDV" name="SAT IR" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sat/ir"
-       field="Tb" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/sat_tempK_toga.colors"
+       field="Tb" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/sat_tempK_toga.colors"
        menuGroup="menu5" menuName="SAT-IR" />
 
 <Layer vis="off" type="MDV" name="SAT WV" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sat/wv"
-       field="Tb" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/wv_uw.colors"
+       field="Tb" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/wv_uw.colors"
        menuGroup="menu5" menuName="SAT-WV" />
 
 <Layer vis="off" type="MDV" name="WRF TEMP C" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf"
-       field="Temp" render="fillcontours" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/temp.colors"
+       field="Temp" render="fillcontours" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/temp.colors"
        menuGroup="menu4" menuName="WRF-TEMP-C" />
 
 <Layer vis="off" type="MDV" name="WRF THETA E" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf"
-       field="THETA" render="fillcontours" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/tempK.colors"
+       field="THETA" render="fillcontours" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/tempK.colors"
        menuGroup="menu4" menuName="WRF-THETA-E" />
 
 <Layer vis="off" type="MDV" name="WRF RH" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf"
-       field="RH" render="fillcontours" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rh.colors"
+       field="RH" render="fillcontours" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rh.colors"
        menuGroup="menu4" menuName="WRF-RH" />
 
 <Layer vis="off" type="MDV" name="WRF Q" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf"
-       field="Q" render="fillcontours" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/mix_frac.colors"
+       field="Q" render="fillcontours" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/mix_frac.colors"
        menuGroup="menu4" menuName="WRF-Q" />
 
 <Layer vis="off" type="MDV" name="WRF WSPEED" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf"
-       field="Wspeed" render="fillcontours" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/wspd.colors"
+       field="Wspeed" render="fillcontours" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/wspd.colors"
        menuGroup="menu4" menuName="WRF-WSPEED" />
 
 <Layer vis="off" type="MDV" name="WRF W" location="mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf"
-       field="W" render="fillcontours" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vert_wspd.colors"
+       field="W" render="fillcontours" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vert_wspd.colors"
        menuGroup="menu4" menuName="WRF-W" />
 
 <Layer vis="off" type="MDV" name="D3R KA DBZ" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur"
-       field="DBZ" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
+       field="DBZ" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
        menuGroup="menu6" menuName="D3R-KA-DBZ" />
 
 <Layer vis="off" type="MDV" name="D3R KA VEL" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_k.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_k.colors"
        menuGroup="menu6" menuName="D3R-KA-VEL" />
 
 <Layer vis="off" type="MDV" name="D3R KA WIDTH" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur"
-       field="WIDTH" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width_k.colors"
+       field="WIDTH" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width_k.colors"
        menuGroup="menu6" menuName="D3R-KA-WIDTH" />
 
 <Layer vis="off" type="MDV" name="D3R KA ZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur"
-       field="ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
+       field="ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
        menuGroup="menu6" menuName="D3R-KA-ZDR" />
 
 <Layer vis="off" type="MDV" name="D3R KA RHOHV" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur"
-       field="RHOHV" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
+       field="RHOHV" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
        menuGroup="menu6" menuName="D3R-KA-RHOHV" />
 
 <Layer vis="off" type="MDV" name="D3R KA PHIDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur"
-       field="PHIDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/phidp.colors"
+       field="PHIDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/phidp.colors"
        menuGroup="menu6" menuName="D3R-KA-PHIDP" />
 
 <Layer vis="off" type="MDV" name="D3R KA NCP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur"
-       field="NCP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/ncp.colors"
+       field="NCP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/ncp.colors"
        menuGroup="menu6" menuName="D3R-KA-NCP" />
 
 <Layer vis="off" type="MDV" name="D3R KA SNR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur"
-       field="SNR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/snr.colors"
+       field="SNR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/snr.colors"
        menuGroup="menu6" menuName="D3R-KA-SNR" />
 
 <Layer vis="off" type="MDV" name="D3R KU DBZ" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur"
-       field="DBZ" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
+       field="DBZ" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/dbz.colors"
        menuGroup="menu6" menuName="D3R-KU-DBZ" />
 
 <Layer vis="off" type="MDV" name="D3R KU VEL" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur"
-       field="VEL" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_k.colors"
+       field="VEL" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/vel_k.colors"
        menuGroup="menu6" menuName="D3R-KU-VEL" />
 
 <Layer vis="off" type="MDV" name="D3R KU WIDTH" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur"
-       field="WIDTH" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width_k.colors"
+       field="WIDTH" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/width_k.colors"
        menuGroup="menu6" menuName="D3R-KU-WIDTH" />
 
 <Layer vis="off" type="MDV" name="D3R KU ZDR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur"
-       field="ZDR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
+       field="ZDR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/zdr.colors"
        menuGroup="menu6" menuName="D3R-KU-ZDR" />
 
 <Layer vis="off" type="MDV" name="D3R KU RHOHV" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur"
-       field="RHOHV" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
+       field="RHOHV" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/rhohv.colors"
        menuGroup="menu6" menuName="D3R-KU-RHOHV" />
 
 <Layer vis="off" type="MDV" name="D3R KU PHIDP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur"
-       field="PHIDP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/phidp.colors"
+       field="PHIDP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/phidp.colors"
        menuGroup="menu6" menuName="D3R-KU-PHIDP" />
 
 <Layer vis="off" type="MDV" name="D3R KU NCP" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur"
-       field="NCP" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/ncp.colors"
+       field="NCP" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/ncp.colors"
        menuGroup="menu6" menuName="D3R-KU-NCP" />
 
 <Layer vis="off" type="MDV" name="D3R KU SNR" location="mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur"
-       field="SNR" render="grid" colorscale="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/snr.colors"
+       field="SNR" render="grid" colorscale="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales/snr.colors"
        menuGroup="menu6" menuName="D3R-KU-SNR" />
 
 <!-- MDVWIND Layers -->
@@ -565,10 +565,10 @@
 
 <!-- CIDDMAP Layers -->
 
-<Layer vis="on" type="CIDDMAP" name="World" location="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/maps/world_states.map"
+<Layer vis="on" type="CIDDMAP" name="World" location="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/maps/world_states.map"
        color="white" width="1" />
 
-<Layer vis="off" type="CIDDMAP" name="counties" location="http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/maps/us_counties.map"
+<Layer vis="off" type="CIDDMAP" name="counties" location="https://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/maps/us_counties.map"
        color="blue" width="0" />
 
 <!-- RANGE_RING Layers -->
@@ -634,8 +634,8 @@
  interval = time between selectable (and animated) ticks, beginning with the start time and ending at or before the end time
  update   = time between checks for data updates (in realtime only). For performance reasons, keep this value >= 5mins.
  timeZone = time zone to use for the interpretation of start/end, and to use for the display. Defaults to UTC if omitted.
-            Abbreviations and full descriptions are ok (eg: MST or America/Denver).  See http://en.wikipedia.org/wiki/Time_zone
-            for a description, and http://www.timezoneconverter.com/ for a listing
+            Abbreviations and full descriptions are ok (eg: MST or America/Denver).  See https://en.wikipedia.org/wiki/Time_zone
+            for a description, and https://www.timezoneconverter.com/ for a listing
 
 ####################################################################################################################################
 -->

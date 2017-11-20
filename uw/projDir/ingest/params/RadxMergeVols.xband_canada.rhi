@@ -100,7 +100,7 @@ max_realtime_data_age_secs = 300;
 // Type: string
 //
 
-primary_dataset_dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_a";
+primary_dataset_dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_a_test";
 
 ///////////// secondary_datasets //////////////////////
 //
@@ -130,28 +130,28 @@ primary_dataset_dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_a";
 
 secondary_datasets = {
   {
-    dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_b",
+    dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_b_test",
     file_match_time_offset_sec = 0,
     file_match_time_tolerance_sec = 120,
     find_mode = FIND_FIRST_AFTER
   }
   ,
   {
-    dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_c",
+    dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_c_test",
     file_match_time_offset_sec = 0,
     file_match_time_tolerance_sec = 120,
     find_mode = FIND_FIRST_AFTER
   }
   ,
   {
-    dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_d",
+    dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_d_test",
     file_match_time_offset_sec = 0,
     file_match_time_tolerance_sec = 120,
     find_mode = FIND_FIRST_AFTER
   }
   ,
   {
-    dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_e",
+    dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_e_test",
     file_match_time_offset_sec = 0,
     file_match_time_tolerance_sec = 120,
     find_mode = FIND_FIRST_AFTER
@@ -340,7 +340,7 @@ compression_level = 4;
 // Type: string
 //
 
-output_dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi";
+output_dir = "/home/disk/bob/olympex/cfradial/moments/xband_all/rhi_test";
 
 ///////////// output_filename_mode ////////////////////
 //
